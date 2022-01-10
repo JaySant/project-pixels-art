@@ -20,6 +20,7 @@ h1#title {
    justify-content: center;
    padding: 100px;
    
+   
   }
 
 .color{
@@ -64,11 +65,11 @@ h1#title {
   }
 
 #pixel-board{
+  
   display: flex;
   justify-content: center;
   
+  
+  
 }
 
-.table{
-  padding: 100px;
-}
