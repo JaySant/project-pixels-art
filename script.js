@@ -41,27 +41,39 @@ window.onload = function(){
         } 
      })
     
-    
-
-for(let index = 1; index <= 5; index += 1){
-    let divName = document.createElement('div')
-    divName.id = `line${index}`
-    pixelBoard.appendChild(divName)
-    const lineBoard = document.getElementById(`line${index}`) 
-    for(let index = 1; index <= 5; index += 1){
+let tamanho = 5   
+function bordSize (tamanho){
+    for(let index = 1; index <= tamanho; index += 1){
         let divName = document.createElement('div')
-        divName.className = `column${index} pixel`
-        divName.style.display = 'inline-block'
-        divName.style.width = '40px'
-        divName.style.height = '40px'
-        divName.style.backgroundColor = 'white'
-        divName.style.border = '1px solid black'
-        lineBoard.appendChild(divName)
+        divName.id = `line${index}`
+        pixelBoard.appendChild(divName)
+        const lineBoard = document.getElementById(`line${index}`) 
+        for(let index = 1; index <= tamanho; index += 1){
+            let divName = document.createElement('div')
+            divName.className = `column${index} pixel`
+            divName.style.display = 'inline-block'
+            divName.style.width = '40px'
+            divName.style.height = '40px'
+            divName.style.backgroundColor = 'white'
+            divName.style.border = '1px solid black'
+            lineBoard.appendChild(divName)
 
+        }
     }
 }
-     
+bordSize(tamanho)
 
+let buttonVqv = document.getElementById('generate-board')
+let inputVqv = document.getElementById('board-size')
+buttonVqv.addEventListener('click', () => {
+    console.log('passei')
+    pixelBoard.innerHTML = ''
+   tamanho = inputVqv.value 
+   bordSize(tamanho)
+if(tamanho === ''){
+    alert('Board inválido!')
+}
+})
 
                                         
     
