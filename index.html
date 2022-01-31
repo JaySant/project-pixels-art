@@ -11,65 +11,29 @@
     
     <header><h1 id="title"> Paleta de Cores </h1></header>
 
-    <main>
+    
         <div id="color-palette">
-            <div id= "black" class="color"></div>
-            <div id="pink-soft" class="color"></div>
-            <div id="green" class="color"></div>
-            <div id="blue" class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <di  class="color"></div>
           
         </div>
-    </main>
-
-    <section class="button"><button id="clear-board" onclick="apagar()">Limpar</button></section>
-
-    <section class="table">
+   
+    <main>
+        <button id="clear-board" onclick="apagar()">Limpar</button>
+        <button id="generate-board">VQV</button>
+        <input id='board-size' type="number" min="1">
+    </main>        
+    <section id="pixel-board">
         
-        <div id="pixel-board">
-
-            <div class='line-one'>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div> 
-            
-
-            <div class='line-two'>   
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            
-            <div class='line-three'>   
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-                
-            <div class='line-four'>   
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            
-            <div class='line-five'>   
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>    
-        </div>
-       
     </section>
+        
+        
+            
+           
+       
+    
 
  <script src="script.js"></script>
 </body>
